@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Example — Media Queries</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>MySite</h1>
+        <p class="tag">Simple responsive demo</p>
+      </div>
+
+      <!-- Nav toggle visible on mobile -->
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+        ☰
+      </button>
+
+      <nav id="mainNav" class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="hero">
+      <img src="https://via.placeholder.com/1200x400.png?text=Hero+Image" alt="Hero image" />
+      <div class="hero-text">
+        <h2>Make your website mobile-friendly</h2>
+        <p>Resize the browser or open developer tools to see the layout adapt.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <article class="card">
+        <h3>Article One</h3>
+        <p>
+          This is the main article. On desktop it sits in the larger column; on mobile it stacks above the sidebar.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Article Two</h3>
+        <p>
+          Another article block. Text and images scale to container width, avoiding horizontal scrolling.
+        </p>
+      </article>
+
+      <div class="cards-row">
+        <div class="card small">Small card A</div>
+        <div class="card small">Small card B</div>
+        <div class="card small">Small card C</div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="card">
+        <h4>Sidebar</h4>
+        <p>Important links, contact info, or ads go here. On mobile this moves below article content.</p>
+      </div>
+      <div class="card">
+        <h4>Subscribe</h4>
+        <form>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 MySite — responsive demo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
